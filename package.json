@@ -1,0 +1,24 @@
+{
+  "name": "challengeforth",
+  "version": "1.0.0",
+  "description": "Challenge 4 week 1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass" : "sass sass:css --watch"
+  },
+  "keywords": [
+    "challenge",
+    "bootcamp",
+    "isdi",
+    "sass",
+    "scss",
+    "css",
+    "html"
+  ],
+  "author": "Ivan Duran",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.57.1"
+  }
+}
