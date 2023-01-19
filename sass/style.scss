@@ -10,6 +10,7 @@
 html,
 body {
   height: 100%;
+  font-family: "Nunito Sans", sans-serif;
 }
 ul {
   list-style: none;
@@ -110,6 +111,29 @@ article {
   flex-wrap: wrap;
   gap: 1rem;
   width: 100%;
+
+  .img_description {
+    font-size: 10rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(29, 106, 154, 0.72);
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+
+    /* transition effect. not necessary */
+    // transition: opacity 0.2s, visibility 0.2s;
+  }
+
+  article:hover,
+  .img_description:hover {
+    visibility: visible;
+    opacity: 1;
+  }
+
   img {
     width: 15rem;
     height: 20rem;
