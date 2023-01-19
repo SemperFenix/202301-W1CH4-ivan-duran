@@ -1,5 +1,57 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;800&display=swap");
 
-* {
+*,
+*::after,
+*::before {
   font-family: "Nunito Sans", sans-serif;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+ul {
+  list-style: none;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+select {
+  // A reset of styles, including removing the default dropdown arrow
+  appearance: NONE;
+  // Additional resets for further consistency
+  background-color: transparent;
+  border: none;
+  padding: 0 1em 0 0;
+  margin: 0;
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: inherit;
+  line-height: inherit;
+  outline: none;
+}
+.select {
+  width: 100%;
+  min-width: 15ch;
+  max-width: 30ch;
+  // border: 1px solid var(--select-border);
+  border-radius: 0.25em;
+  padding: 0.25em 0.5em;
+  font-size: 1.25rem;
+  cursor: pointer;
+  line-height: 1.1;
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+}
+
+select option:first-of-type {
+  display: none;
 }
