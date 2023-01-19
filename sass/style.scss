@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;800&display=swap");
+
+*,
+*::after,
+*::before {
+  font-family: "Nunito Sans", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+}
+ul {
+  list-style: none;
+  font-size: 1.3rem;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+select {
+  // A reset of styles, including removing the default dropdown arrow
+
+  // Additional resets for further consistency
+  background-color: transparent;
+  border: none;
+  padding: 0 1em 0 0;
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: inherit;
+  line-height: inherit;
+  outline: none;
+}
+.select {
+  // border: 1px solid var(--select-border);
+  border-radius: 0.25em;
+  padding: 0.25em 0.5em;
+  font-size: 1.25rem;
+  cursor: pointer;
+  line-height: 1.1;
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+}
+h1 {
+  margin-left: 2rem;
+}
+select > option {
+  font-weight: 800;
+}
+
+select option:first-of-type {
+  display: none;
+}
+
+ul > li:last-child {
+  border: 3px solid orangered;
+  border-radius: 0px 20px 20px 20px;
+  min-width: fit-content;
+  margin-right: 3rem;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-shadow: rgba(191, 191, 191, 0.45) 0px 25px 20px -20px;
+  width: 100%;
+}
+nav > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+}
+ul li {
+  padding: 0.9rem;
+}
+li {
+  flex: 1 0 5%;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: orangered;
+  font-weight: 800;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+main {
+  margin-top: 5rem;
+  margin-left: 2rem;
+}
+article {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 100%;
+  img {
+    width: 15rem;
+    height: 20rem;
+    border-radius: 1.5rem;
+    width: 300px;
+    object-fit: cover;
+  }
+}
+section {
+  div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95%;
+    margin-bottom: 3rem;
+
+    p {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: white;
+      padding: 0.7rem;
+      background-color: orangered;
+      border-radius: 0px 20px 20px 20px;
+      border: 2px solid orangered;
+    }
+    p:hover {
+      border: 2px solid orangered;
+      border-radius: 0px 20px 20px 20px;
+
+      background-color: white;
+      color: orangered;
+    }
+  }
+}
