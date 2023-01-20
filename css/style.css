@@ -117,17 +117,31 @@ article {
   gap: 1rem;
   width: 100%;
 }
-article .img_description {
-  font-size: 10rem;
+article span {
+  display: flex;
+  position: relative;
+  height: 200px;
+  width: 257px;
+}
+article span:hover {
+  visibility: visible;
+  opacity: 1;
+}
+article .img_description,
+article .img_description span {
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(29, 106, 154, 0.72);
   color: #fff;
-  visibility: hidden;
+  visibility: visible;
   opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 800;
   /* transition effect. not necessary */
 }
 article article:hover,
