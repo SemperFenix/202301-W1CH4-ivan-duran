@@ -10,6 +10,7 @@
 html,
 body {
   height: 100%;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 ul {
@@ -115,6 +116,24 @@ article {
   flex-wrap: wrap;
   gap: 1rem;
   width: 100%;
+}
+article .img_description {
+  font-size: 10rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(29, 106, 154, 0.72);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  /* transition effect. not necessary */
+}
+article article:hover,
+article .img_description:hover {
+  visibility: visible;
+  opacity: 1;
 }
 article img {
   width: 15rem;
